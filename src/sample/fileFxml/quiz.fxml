@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="529.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QuizController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="792.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/bigbenuk.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="651.0" layoutY="14.0" prefHeight="21.0" prefWidth="66.0" text="Score : " textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="95.0" prefHeight="43.0" prefWidth="93.0" text="Question :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="594.0" layoutY="472.0" mnemonicParsing="false" onAction="#clickRandomQuiz" prefHeight="31.0" prefWidth="144.0" text="Câu hỏi tiếp theo" />
+      <Label layoutY="1.0" prefHeight="21.0" prefWidth="180.0" text="The Quiz Show" textFill="#8f9e22">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio2" layoutX="466.0" layoutY="202.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="314.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="answerquestion" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio1" layoutX="90.0" layoutY="202.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="333.0" selected="true" textFill="WHITE" toggleGroup="$answerquestion">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio3" layoutX="90.0" layoutY="268.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="314.0" textFill="WHITE" toggleGroup="$answerquestion">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio4" layoutX="466.0" layoutY="273.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="324.0" textFill="WHITE" toggleGroup="$answerquestion">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="questionlabel" layoutX="153.0" layoutY="95.0" prefHeight="43.0" prefWidth="628.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="58.0" layoutY="472.0" mnemonicParsing="false" onMouseClicked="#backToDictionary" text="Back to Dictionary" />
+      <Label fx:id="scoreofplayer" layoutX="707.0" layoutY="11.0" prefHeight="27.0" prefWidth="48.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="38.0" prefHeight="21.0" prefWidth="82.0" text="Your Turn:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="turnplayer" layoutX="707.0" layoutY="35.0" prefHeight="27.0" prefWidth="48.0" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="57.0" prefHeight="27.0" prefWidth="56.0" text="Status:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="705.0" layoutY="55.0" prefHeight="31.0" prefWidth="66.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="66.0" layoutY="214.0" prefHeight="31.0" prefWidth="22.0" text="A." textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="287.0" prefHeight="21.0" prefWidth="22.0" text="B." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="440.0" layoutY="219.0" text="C." textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="442.0" layoutY="290.0" text="D." textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="introduce" layoutX="167.0" layoutY="95.0" prefHeight="43.0" prefWidth="492.0" text="Bạn hãy nhấn vào câu hỏi tiếp theo để bắt đầu" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

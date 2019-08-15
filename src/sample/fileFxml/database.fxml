@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="529.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DatabaseController">
+   <children>
+      <ImageView fitHeight="529.0" fitWidth="792.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/clock.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="396.0" layoutY="8.0" prefHeight="40.0" prefWidth="294.0" text="Tra cứu từ Database">
+         <font>
+            <Font name="Segoe Script" size="24.0" />
+         </font>
+      </Label>
+      <WebView fx:id="webviewMean" layoutX="335.0" layoutY="164.0" opacity="0.84" prefHeight="320.0" prefWidth="427.0" />
+      <ListView fx:id="listviewWord" layoutX="26.0" layoutY="164.0" onKeyPressed="#keyHangleListview" onKeyReleased="#keyHangleListview" onMouseClicked="#clickOnListView" opacity="0.86" prefHeight="320.0" prefWidth="239.0" />
+      <TextField fx:id="input" layoutX="26.0" layoutY="107.0" onKeyPressed="#KeyDownOfTextField" onKeyReleased="#Autocomplete" onKeyTyped="#KeyDownOfTextField" prefHeight="37.0" prefWidth="239.0" promptText="Bạn có thể nhập" />
+      <Label layoutX="26.0" layoutY="53.0" prefHeight="37.0" prefWidth="227.0" text="Nhập từ cần tra cứu" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Emoji" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="122.0" prefHeight="44.0" prefWidth="131.0" text="Nghĩa của từ" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+      <Button defaultButton="true" layoutX="709.0" layoutY="14.0" mnemonicParsing="false" onAction="#throughInsertController" text="Thêm" />
+      <Button defaultButton="true" layoutX="709.0" layoutY="59.0" mnemonicParsing="false" onAction="#throughUpdateController" prefHeight="31.0" prefWidth="58.0" text="Sửa" />
+      <Button defaultButton="true" layoutX="709.0" layoutY="104.0" mnemonicParsing="false" onAction="#QuickDelete" prefHeight="31.0" prefWidth="58.0" text="Xóa" />
+      <Button defaultButton="true" layoutX="26.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#BackToDictionary" prefHeight="24.0" prefWidth="239.0" text="Back to Dictionary" />
+      <ComboBox fx:id="userchoice" layoutX="26.0" layoutY="14.0" onAction="#SelectedLanguage" opacity="0.78" prefHeight="31.0" prefWidth="118.0" promptText="Language">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ComboBox>
+      <Button defaultButton="true" layoutX="273.0" layoutY="105.0" mnemonicParsing="false" onAction="#Sound" prefHeight="37.0" prefWidth="97.0" text="Sound" />
+      <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="347.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/sound.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

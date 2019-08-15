@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="562.0" fitWidth="793.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/flaguk.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="63.0" layoutY="44.0" prefHeight="35.0" prefWidth="190.0" text="Nhập từ cần tra cứu" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input" alignment="CENTER" layoutX="36.0" layoutY="87.0" onKeyPressed="#removeBackspace" onKeyReleased="#suggestWords" onKeyTyped="#removeBackspace" prefHeight="35.0" prefWidth="217.0" promptText="bạn có thể nhập">
+         <font>
+            <Font name="Segoe UI Light" size="23.0" />
+         </font>
+      </TextField>
+      <ListView fx:id="listview" layoutX="36.0" layoutY="145.0" onKeyPressed="#keyHangleOnListView" onKeyReleased="#keyHangleOnListView" onMouseClicked="#clickedOnListView" opacity="0.8" prefHeight="292.0" prefWidth="217.0" />
+      <Button defaultButton="true" layoutX="347.0" layoutY="256.0" mnemonicParsing="false" onAction="#Translate" prefHeight="35.0" prefWidth="130.0" styleClass="buttontranslate" text="Translate">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="meaning" layoutX="537.0" layoutY="140.0" opacity="0.83" prefHeight="302.0" prefWidth="217.0" />
+      <Label layoutX="572.0" layoutY="94.0" prefHeight="35.0" prefWidth="158.0" text="Nghĩa của từ" textFill="WHITE" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="572.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="94.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="487.0" prefHeight="35.0" prefWidth="645.0" text="Dictionary UK-VietNamese by AnhNguyen ver 3.1.2 mail:harrykai99@gmail.com" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button layoutX="129.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoSceneAdd" prefHeight="31.0" prefWidth="87.0" styleClass="button1" text="Thêm" />
+      <Label layoutX="21.0" layoutY="15.0" prefHeight="31.0" prefWidth="108.0" text="Features :" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="232.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoSceneDelete" prefHeight="31.0" prefWidth="87.0" styleClass="button1" text="Xóa" />
+      <Button layoutX="333.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoSceneModify" prefHeight="31.0" prefWidth="78.0" styleClass="button1" text="Sửa" />
+      <Button layoutX="423.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoSceceAPIGoogle" prefHeight="31.0" prefWidth="123.0" styleClass="button1" text="API Google" />
+      <ImageView fitHeight="18.0" fitWidth="32.0" layoutX="528.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/link.png" />
+         </image></ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="301.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/rubbish.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="24.0" layoutX="390.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/technics.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="31.0" layoutX="198.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/plus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="81.0" layoutX="452.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/language.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="257.0" layoutY="86.0" mnemonicParsing="false" onAction="#Sound" onRotationStarted="#Sound" prefHeight="50.0" prefWidth="142.0" styleClass="sound" text="sound">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="361.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" styleClass="images">
+         <image>
+            <Image url="@images/sound.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="257.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#clickOnButtonFavorite" prefHeight="31.0" prefWidth="142.0" styleClass="sound" text="Favorite">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="25.0" layoutX="365.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/favorite.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="36.0" layoutY="442.0" mnemonicParsing="false" onAction="#gotoSceneFavorite" prefHeight="24.0" prefWidth="217.0" styleClass="sound" text="Danh sách yêu thích của tôi">
+         <font>
+            <Font name="Segoe UI Light" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="536.0" layoutY="445.0" mnemonicParsing="false" onAction="#gotoSceneQuiz" prefHeight="31.0" prefWidth="217.0" styleClass="sound" text="Quiz">
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="564.0" layoutY="15.0" mnemonicParsing="false" onAction="#gotoSceneDatabase" prefHeight="31.0" prefWidth="114.0" styleClass="button1" text="Database">
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="18.0" layoutX="660.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/sql.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="257.0" layoutY="186.0" mnemonicParsing="false" onAction="#QuickRemove" prefHeight="31.0" prefWidth="142.0" styleClass="sound" text="Xóa Nhanh">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="18.0" layoutX="372.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/rubbish.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="722.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#SoundViet" prefHeight="31.0" prefWidth="31.0" styleClass="sound" />
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="729.0" layoutY="109.0" onMouseClicked="#SoundViet" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/sound.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="buttonexit" layoutX="694.0" layoutY="15.0" mnemonicParsing="false" onAction="#ExitDict" prefHeight="31.0" prefWidth="87.0" styleClass="button1" text="Thoát">
+         <font>
+            <Font name="Segoe UI Light" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="760.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logout.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

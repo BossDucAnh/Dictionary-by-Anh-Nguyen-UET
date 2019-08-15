@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="mbrola">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sound/mbrola.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/freetts.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/freetts-jsapi10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/en_us.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/cmu_us_kal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/cmu_time_awb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/cmudict04.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/cmulex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/cmutimelex.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

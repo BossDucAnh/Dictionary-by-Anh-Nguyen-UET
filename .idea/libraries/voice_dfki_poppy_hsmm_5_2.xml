@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="voice-dfki-poppy-hsmm-5.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sound/voice-dfki-poppy-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/voice-cmu-slt-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/voice-cmu-rms-hsmm-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/marytts-lang-en-5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/marytts-builder-5.2-jar-with-dependencies.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/json-20180813.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/jlayer-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sound/java-google-speech-api-V2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

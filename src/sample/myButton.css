@@ -1,0 +1,16 @@
+.button1{
+    -fx-background-color: #3dbee8;
+    -fx-border-radius: 10px;
+    -fx-font-family: Tahoma;
+    -fx-font-weight: bold;
+}
+.button1:hover{
+    -fx-background-color: #ed6a5a;
+}
+.sound{
+    -fx-background-color: #3dbee8;
+}
+.sound:hover{
+    -fx-background-color: #ed6a5a;
+    -fx-display:block;
+}
